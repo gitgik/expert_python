@@ -13,10 +13,10 @@ Looking for python
 This song has python in it!
 """
 
+
 def grep(pattern):
-    print ("Looking for {}".format(pattern))
+    print("Looking for {}".format(pattern))
     while True:
         line = (yield)
         if pattern in line:
-            print (line)
-
+            print(line)

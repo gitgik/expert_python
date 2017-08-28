@@ -5,6 +5,7 @@ into a pipe and pull items through it with a for loop.
 """
 from watch import watch_file
 
+
 def grep(pattern, lines):
     """A generator function to find a string in a given group of strings"""
     for line in lines:
@@ -19,4 +20,4 @@ pylines = grep("python", loglines)
 
 # pull results out of the processing pipeline
 for line in pylines:
-    print (line)
+    print(line)
